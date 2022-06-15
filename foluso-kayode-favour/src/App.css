@@ -1,0 +1,75 @@
+.title{
+  margin-bottom: 10px;
+}
+.contain{
+  margin: 3rem 2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.space{
+  margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #96dada;
+  border-radius: 5px;
+  padding: 25px;
+ cursor: pointer;
+ -moz-osx-font-smoothing: grayscale;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: transform 0.25s ease-out;
+}
+
+.card-container:hover{
+  transform: scale(1.05);
+}
+
+.input{
+  width: 20rem;
+  height: 2rem;
+  margin-bottom: 20px;
+}
+
+.path-card{
+  margin: 20px auto 20px;
+  width: 20%;
+  margin-top: 20px; 
+  background: rgb(164, 179, 142);
+}
+
+.card-list {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .card-list {
+     margin-top: 50px;
+     width: 80vw;
+     grid-template-columns: repeat(2, 1fr);
+     grid-gap: 10px;
+  }
+
+  .card-container {
+     padding: 10px;
+  }
+
+  .path-card{
+
+        width: 70%;
+   margin: 20px auto 50px;
+  }
+ 
+}
+

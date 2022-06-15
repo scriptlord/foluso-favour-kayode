@@ -25,7 +25,7 @@ useEffect(() => {
 }, [query])
 
   return (
-    <div>
+    <div className='contain'>
       <h1 className='title'>Search Engine</h1>
       <p>Guess My Path Game</p>
 
