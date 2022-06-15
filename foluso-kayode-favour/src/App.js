@@ -8,9 +8,21 @@ import './App.css';
 function App() {
   const [query, setQuery] = useState('')
   const [pathFound, setPathFound] = useState('')
+
   const handleQuery = (e) => {
     setQuery(e.target.value)
   }
+
+  const findPath = () => {
+    let newValue = formatInputValue(query);
+    let result = findKey(obj, newValue);
+    setPathFound(result)
+  };
+
+
+useEffect(() => {
+  findPath()
+}, [query])
 
   return (
     <div>
