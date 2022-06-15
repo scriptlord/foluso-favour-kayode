@@ -33,9 +33,18 @@ useEffect(() => {
       <div className='card-list'>
       {objValues.map((value, index) => {
         return (
-          <p>{value}</p>
+          <div className='card-container' key={index}>
+          <p className='game space'>Guess my Path? 🤔</p>
+          <small className='space'><i>I am not case sensitive</i></small>
+          My object value is: <span><b>{value}</b></span>
+          
+          </div>
         )
       })}
+    </div>
+    <div className='card-container path-card'>
+      <h3 className='space'>Answer:{pathFound ? `obj.${pathFound}`: '🤔'}</h3>
+      {pathFound ? <p>You found the path 🤝! Congrats</p> : <p>You haven't found a path 😢</p>}
     </div>
     </div>
 
